@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<servlet>
+		<servlet-name>SearchController</servlet-name>
+		<servlet-class>com.jdbc.budgettracker.controller.BudgetTrackerSearchController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>InsertController</servlet-name>
+		<servlet-class>com.jdbc.budgettracker.controller.BudgetTrackerInsertController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchController</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InsertController</servlet-name>
+		<url-pattern>/Insert</url-pattern>
+	</servlet-mapping>
+</web-app>
